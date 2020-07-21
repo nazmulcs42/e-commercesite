@@ -23,6 +23,22 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('admin.index');
     }
+
+    public function show( Request $request)
+    {
+       
+        $url = $request->url;
+        $value = explode("v=", $url);
+
+        $videoID = $value[1];  
+
+        echo $videoID;
+
+        return view('welcome', ['videoID' => $videoID]);
+    }
+
+    
 }
+

@@ -1,0 +1,60 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+<body>
+
+</body>
+</html>	
+
+
+<div class="row">
+            
+
+            <div class="content">
+                <div class="m-b-md">
+                    <h2> Show image thumnail by youtube video url using php</h2>
+                </div>
+                <div class="m-b-md">
+                    <form action="{{ route('thumnail.show') }}" method="post">
+                        <input type="text" name="url" placeholder="Enter url here.">
+                        <input type="submit" name="submit">
+
+                    </form>
+
+                </div>
+
+                <div class="m-b-md">
+                    <? php
+                        if(!empty($videoId)){
+                    ?>
+                    <h3> thumbnail image: </h3>
+                    <img src="https://img.youtube.com/vi/<?php $videoID ?>/hqdefault.jpg" width="25">
+
+                    <? php } ?>
+                </div>
+
+            </div>
+
+        </div>	
+
+
+
+
+
+
+
+{{asset('')}}
+
+
+
+
+
+
