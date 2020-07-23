@@ -14,7 +14,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin.index');
+        return view('admin.dashboard.index');
     }
 
     /**
@@ -83,8 +83,87 @@ class AdminController extends Controller
         //
     }
 
-     public function login()
+    public function login()
     {
-        return view('admin');
+        return view('admin.login');
     }
+
+    public function calendar()
+    {
+        return view('admin.dashboard.calendar');
+    }
+
+    public function chart()
+    {
+        return view('admin.dashboard.chart');
+    }
+    
+    public function file_manager()
+    {
+        return view('admin.dashboard.file-manager');
+    }
+    
+    public function form()
+    {
+        return view('admin.dashboard.form');
+    }
+    
+    public function gallery()
+    {
+        return view('admin.dashboard.gallery');
+    }
+    
+    public function icon()
+    {
+        return view('admin.dashboard.icon');
+    }
+        
+    public function messages()
+    {
+        return view('admin.dashboard.messages');
+    }
+        
+    public function submenu1()
+    {
+        return view('admin.dashboard.submenu1');
+    }
+        
+    public function submenu2()
+    {
+        return view('admin.dashboard.submenu2');
+    }
+        
+    public function submenu3()
+    {
+        return view('admin.dashboard.submenu3');
+    }
+            
+    public function table()
+    {
+        return view('admin.dashboard.table');
+    }
+            
+    public function tasks()
+    {
+        return view('admin.dashboard.tasks');
+    }
+            
+    public function typography()
+    {
+        return view('admin.dashboard.typography');
+    }
+                
+    public function ui()
+    {
+        return view('admin.dashboard.ui');
+    }
+                
+    public function widgets()
+    {
+        return view('admin.dashboard.widgets');
+    }
+    
+    
+    
+
 }

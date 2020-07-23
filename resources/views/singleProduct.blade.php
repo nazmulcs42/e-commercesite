@@ -6,7 +6,7 @@
 	<div class="container">
 	  <div class="single_top">
 	       <div class="col-md-9 single_right">
-	   	      <!-- <div class="grid images_3_of_2">
+	   	       <div class="grid images_3_of_2">
 						<ul id="etalage">
 							<li>
 								<a href="optionallink.html">
@@ -28,7 +28,7 @@
 							</li>
 						</ul>
 						 <div class="clearfix"></div>		
-				  </div> -->
+				  </div>
 				  <div class="desc1 span_3_of_2">
 				    <h1>Lorem ipsum dolor sit amet</h1>
 				    <p class="m_5">Rs. 888 <span class="reducedfrom">Rs. 999</span> <a href="#">click for offer</a></p>

@@ -8,11 +8,11 @@
         <meta name="keywords" content="Gifty Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
         Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <link href="{{asset('frontcss/bootstrap.css')}}" rel='stylesheet' type='text/css' />
+        <link href="{{asset('css/bootstrap.css')}}" rel='stylesheet' type='text/css' />
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <!-- Custom Theme files -->
-        <link href="{{asset('frontcss/style.css')}}" rel='stylesheet' type='text/css' />
-        <link rel="stylesheet" href="{{asset('frontcss/jquery.countdown.css')}}" />
+        <link href="{{asset('css/style.css')}}" rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="{{asset('css/jquery.countdown.css')}}" />
         <!-- Custom Theme files -->
         <!--webfont-->
         <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
@@ -20,7 +20,7 @@
         <!-- dropdown -->
         <script src="{{asset('js/jquery.easydropdown.js')}}"></script>
         <!-- start menu -->
-        <link href="{{asset('frontcss/megamenu.css')}}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{asset('css/megamenu.css')}}" rel="stylesheet" type="text/css" media="all" />
         <script type="text/javascript" src="{{asset('js/megamenu.js')}}"></script>
         <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
         <script src="{{asset('js/responsiveslides.min.js')}}"></script>
@@ -34,6 +34,26 @@
                 pager: true,
               });
             });
+
+        </script>
+        <link rel="stylesheet" href="{{asset('css/etalage.css')}}"/>
+        <script src="{{asset('js/jquery.etalage.min.js')}}
+        "></script>
+        <script>
+                    jQuery(document).ready(function($){
+
+                        $('#etalage').etalage({
+                            thumb_image_width: 300,
+                            thumb_image_height: 400,
+                            source_image_width: 900,
+                            source_image_height: 1200,
+                            show_hint: true,
+                            click_callback: function(image_anchor, instance_id){
+                                alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+                            }
+                        });
+
+                    });
         </script>
         <script src="{{asset('js/jquery.countdown.js')}}"></script>
         <script src="{{asset('js/script.js')}}"></script>
@@ -41,9 +61,9 @@
     </head>
     <body>
 
-        <div id="app">
+      <div id="app">
             <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-                <!--<div class="container">-->
+               <div class="container">
 
                     <div class="header_top">
                       <div class="container">
@@ -68,7 +88,7 @@
                                  </div>
                                  <div class="cssmenu">
                                     <ul>
-                                        <li class="active"><a href="login.html">Account</a></li> 
+                                        <li class="active"><a href="{{route('customer.login')}}">Account</a></li> 
                                         <li><a href="{{route('customer.wishlist')}}">Wishlist</a></li> 
                                         <li><a href="{{route('customer.login')}}">Log In</a></li> 
                                         <li><a href="{{route('customer.register')}}">Sign Up</a></li>
@@ -276,7 +296,6 @@
                           </div>
                     </div>
                     </div>
-                    <div >
                         
                     </div>
 
@@ -296,9 +315,24 @@
                               <li><a href="#">About Us</a></li>
                               <li><a href="{{asset('contact')}}">Contact Us</a></li>
                             </ul>
-                            <p class="copy">Copyright&copy; 2020 developed by <a href="https://TechLatif.com" target="_blank"> w3layouts</a></p>
+                            <p class="copy">Copyright&copy; 2020 developed by <a href="https://TechLatif.com" target="_blank"> TechLatif</a></p>
                         </div>
                     </div>
+                    <link href="{{asset('css/flexslider.css')}}" rel='stylesheet' type='text/css' />
+                    <script defer src="{{asset('js/jquery.flexslider.js')}}"></script>
+                    <script type="text/javascript">
+                        $(function(){
+                          SyntaxHighlighter.all();
+                        });
+                        $(window).load(function(){
+                          $('.flexslider').flexslider({
+                            animation: "slide",
+                            start: function(slider){
+                              $('body').removeClass('loading');
+                            }
+                          });
+                        });
+                    </script>
             </nav>
         </div>
     </body>

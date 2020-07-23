@@ -4,7 +4,7 @@
 	
 	<!-- start: Meta -->
 	<meta charset="utf-8">
-	<title>Bootstrap Metro Dashboard by Dennis Ji for ARM demo</title>
+	<title>E-shop Admin Panel</title>
 	<meta name="description" content="Bootstrap Metro Dashboard">
 	<meta name="author" content="Dennis Ji">
 	<meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
@@ -52,7 +52,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="{{route('admin.index')}}"><span>Metro</span></a>
+				<a class="brand" href="{{route('admin.index')}}"><span>E-shop</span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
@@ -369,16 +369,17 @@
 			</noscript>
 			
 			<!-- start: Content -->
-			<div id="content" class="span10">
+			<div id="content" class="span10">	
+
 				<main class="py-4">
-                    @yield('content')
-                </main>
-				
+	                @yield('content')
+	            </main>				
+
 			</div><!--/.fluid-container-->
 	
 			<!-- end: Content -->
 		</div><!--/#content.span10-->
-		</div><!--/fluid-row-->
+	</div><!--/fluid-row-->
 		
 	<div class="modal hide fade" id="myModal">
 		<div class="modal-header">
@@ -395,12 +396,11 @@
 	</div>
 	
 	<div class="clearfix"></div>
-
-
+	
 	<footer>
 
 		<p>
-			<span style="text-align:left;float:left">&copy; 2020 <a href="TechLatif.com" alt="Bootstrap_Metro_Dashboard"> TechLatif Group</a></span></a></span>
+			<span style="text-align:left;float:left">&copy; 2020 <a href="TechLatif.com" alt="Bootstrap_Metro_Dashboard"> TechLatif Group</a></span>
 			
 		</p>
 
@@ -409,7 +409,7 @@
 	<!-- start: JavaScript-->
 
 		<script src="{{asset('admin/js/jquery-1.9.1.min.js')}}"></script>
-		<script src="{{asset('admin/js/jquery-migrate-1.0.0.min.js')}}"></script>
+		<script src="{{asset('js/jquery-migrate-1.0.0.min.js')}}"></script>
 	
 		<script src="{{asset('admin/js/jquery-ui-1.10.0.custom.min.js')}}"></script>
 	
@@ -424,13 +424,14 @@
 		<script src='js/fullcalendar.min.js'></script>
 	
 		<script src='js/jquery.dataTables.min.js'></script>
+	
 
 		<script src="{{asset('admin/js/excanvas.js')}}"></script>
 		<script src="{{asset('admin/js/jquery.flot.js')}}"></script>
 		<script src="{{asset('admin/js/jquery.flot.pie.js')}}"></script>
 		<script src="{{asset('admin/js/jquery.flot.stack.js')}}"></script>
 		<script src="{{asset('admin/js/jquery.flot.resize.min.js')}}"></script>
-		
+	
 		<script src="{{asset('admin/js/jquery.chosen.min.js')}}"></script>
 	
 		<script src="{{asset('admin/js/jquery.uniform.min.js')}}"></script>

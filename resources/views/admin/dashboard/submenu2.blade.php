@@ -1,8 +1,7 @@
 @extends('layouts.admin-app')
 
     @section('content')
-
-<ul class="breadcrumb">
+			<ul class="breadcrumb">
 				<li>
 					<i class="icon-home"></i>
 					<a href="index.html">Home</a> 
@@ -11,38 +10,38 @@
 				<li><a href="#">Dashboard</a></li>
 			</ul>
 
-<div class="row-fluid">
+			<div class="row-fluid">
 				
 				<div class="span3 statbox purple" onTablet="span6" onDesktop="span3">
 					<div class="boxchart">5,6,7,2,0,4,2,4,8,2,3,3,2</div>
-					<div class="number">854<i class="icon-arrow-up"></i></div>
+					<div class="number">8954<i class="icon-arrow-up"></i></div>
 					<div class="title">visits</div>
 					<div class="footer">
-						<a href="#"> read full report</a>
+						read full report
 					</div>	
 				</div>
 				<div class="span3 statbox green" onTablet="span6" onDesktop="span3">
 					<div class="boxchart">1,2,6,4,0,8,2,4,5,3,1,7,5</div>
-					<div class="number">123<i class="icon-arrow-up"></i></div>
-					<div class="title">sales</div>
+					<div class="number">8954<i class="icon-arrow-up"></i></div>
+					<div class="title">visits</div>
 					<div class="footer">
-						<a href="#"> read full report</a>
+						read full report
 					</div>
 				</div>
 				<div class="span3 statbox blue noMargin" onTablet="span6" onDesktop="span3">
 					<div class="boxchart">5,6,7,2,0,-4,-2,4,8,2,3,3,2</div>
-					<div class="number">982<i class="icon-arrow-up"></i></div>
-					<div class="title">orders</div>
+					<div class="number">8954<i class="icon-arrow-up"></i></div>
+					<div class="title">visits</div>
 					<div class="footer">
-						<a href="#"> read full report</a>
+						read full report
 					</div>
 				</div>
 				<div class="span3 statbox yellow" onTablet="span6" onDesktop="span3">
-					<div class="boxchart">7,2,2,2,1,-4,-2,4,8,,0,3,3,5</div>
-					<div class="number">678<i class="icon-arrow-down"></i></div>
+					<div class="boxchart">5,6,7,2,0,-4,-2,4,8,2,3,3,2</div>
+					<div class="number">8954<i class="icon-arrow-up"></i></div>
 					<div class="title">visits</div>
 					<div class="footer">
-						<a href="#"> read full report</a>
+						read full report
 					</div>
 				</div>	
 				
@@ -391,23 +390,23 @@
 					<div class="content">
 						
 						<div class="browserStat big">
-							<img src="{{asset('img/browser-chrome-big.png')}}" alt="Chrome">
+							<img src="img/browser-chrome-big.png" alt="Chrome">
 							<span>34%</span>
 						</div>
 						<div class="browserStat big">
-							<img src="{{asset('img/browser-firefox-big.png')}}" alt="Firefox">
+							<img src="img/browser-firefox-big.png" alt="Firefox">
 							<span>34%</span>
 						</div>
 						<div class="browserStat">
-							<img src="{{asset('img/browser-ie.png')}}" alt="Internet Explorer">
+							<img src="img/browser-ie.png" alt="Internet Explorer">
 							<span>34%</span>
 						</div>
 						<div class="browserStat">
-							<img src="{{asset('img/browser-safari.png')}}" alt="Safari">
+							<img src="img/browser-safari.png" alt="Safari">
 							<span>34%</span>
 						</div>
 						<div class="browserStat">
-							<img src="{{asset('img/browser-opera.png')}}" alt="Opera">
+							<img src="img/browser-opera.png" alt="Opera">
 							<span>34%</span>
 						</div>	
 								
@@ -509,7 +508,7 @@
 						<ul class="dashboard-list metro">
 							<li class="green">
 								<a href="#">
-									<img class="avatar" alt="Dennis Ji" src="{{asset('img/avatar.jpg')}}">
+									<img class="avatar" alt="Dennis Ji" src="img/avatar.jpg">
 								</a>
 								<strong>Name:</strong> Dennis Ji<br>
 								<strong>Since:</strong> Jul 25, 2012 11:09<br>
@@ -517,7 +516,7 @@
 							</li>
 							<li class="yellow">
 								<a href="#">
-									<img class="avatar" alt="Dennis Ji" src="{{asset('img/avatar.jpg')}}">
+									<img class="avatar" alt="Dennis Ji" src="img/avatar.jpg">
 								</a>
 								<strong>Name:</strong> Dennis Ji<br>
 								<strong>Since:</strong> Jul 25, 2012 11:09<br>
@@ -525,7 +524,7 @@
 							</li>
 							<li class="red">
 								<a href="#">
-									<img class="avatar" alt="Dennis Ji" src="{{asset('img/avatar.jpg')}}">
+									<img class="avatar" alt="Dennis Ji" src="img/avatar.jpg">
 								</a>
 								<strong>Name:</strong> Dennis Ji<br>
 								<strong>Since:</strong> Jul 25, 2012 11:09<br>
@@ -533,7 +532,7 @@
 							</li>
 							<li class="blue">
 								<a href="#">
-									<img class="avatar" alt="Dennis Ji" src="{{asset('img/avatar.jpg')}}">
+									<img class="avatar" alt="Dennis Ji" src="img/avatar.jpg">
 								</a>
 								<strong>Name:</strong> Dennis Ji<br>
 								<strong>Since:</strong> Jul 25, 2012 11:09<br>
@@ -636,6 +635,4 @@
 				<div class="clearfix"></div>
 								
 			</div><!--/row-->
-
 	@endsection
-
